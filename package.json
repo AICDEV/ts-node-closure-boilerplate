@@ -1,0 +1,39 @@
+{
+  "name": "ts-node-closure-boilerplate",
+  "version": "0.0.1",
+  "description": "Dev boilerplate for typescript development in node",
+  "main": "src/index.ts",
+  "author": "doc.aicdev@gmail.com",
+  "license": "Apache-2.0",
+  "scripts": {
+    "clean": "yarn run rimraf lib",
+    "precommit": "yarn run pretty-quick --config .prettyrc --staged",
+    "start:dev": "ts-node src/index.ts",
+    "start": "export NODE_ENV=production && node lib/index.js",
+    "lint": "yarn run tslint --project .",
+    "lint:fix": "yarn run tslint --fix --project .",
+    "test": "yarn run jest --json --outputFile=test.json --passWithNoTests --detectOpenHandles ./__tests__",
+    "test:integration": "yarn run jest --json --outputFile=test_integration.json --passWithNoTests --detectOpenHandles ./__integration__",
+    "build": "yarn clean && yarn tsc && yarn gulp compile:hard"
+  },
+  "devDependencies": {
+    "@types/jest": "24.0.23",
+    "google-closure-compiler": "20191111.0.0",
+    "gulp": "4.0.2",
+    "gulp-debug": "4.0.0",
+    "gulp-flatmap": "1.0.2",
+    "husky": "3.1.0",
+    "jest": "24.9.0",
+    "prettier": "1.19.0",
+    "pretty-quick": "2.0.1",
+    "rimraf": "3.0.0",
+    "ts-jest": "24.1.0",
+    "ts-node": "8.5.2",
+    "tslint": "5.20.0",
+    "typescript": "3.7.2"
+  },
+  "dependencies": {
+    "inversify": "5.0.1",
+    "reflect-metadata": "0.1.13"
+  }
+}
