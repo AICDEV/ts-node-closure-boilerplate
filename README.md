@@ -2,6 +2,8 @@
 
 This is a simple boilerplate to start direct coding in typescript and run it with node.js
 
+After first checkout or clonse please run `yarn`to install all required dependencies
+
 ## scripts
 
 The following scripts are available
