@@ -22,7 +22,8 @@
     "no-angle-bracket-type-assertion": false,
     "max-line-length": false,
     "whitespace": false,
-    "array-type": false
+    "array-type": false,
+    "no-console": false
   },
   "rulesDirectory": []
 }
