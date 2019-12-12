@@ -14,11 +14,16 @@
     "lint:fix": "yarn run tslint --fix --project .",
     "test": "yarn run jest --json --outputFile=test.json --passWithNoTests --detectOpenHandles ./__tests__",
     "test:integration": "yarn run jest --json --outputFile=test_integration.json --passWithNoTests --detectOpenHandles ./__integration__",
+    "test:bdd": "./node_modules/cucumber/bin/cucumber-js bdd/**/*.feature --require 'bdd/**/*.ts' --require-module ts-node/register --require-module chai",
     "build": "yarn clean && yarn tsc && yarn gulp compile:hard"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/cucumber": "^6.0.0",
     "@types/jest": "24.0.23",
     "@types/node": "^12.12.16",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
     "google-closure-compiler": "20191111.0.0",
     "gulp": "4.0.2",
     "gulp-debug": "4.0.0",

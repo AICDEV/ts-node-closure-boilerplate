@@ -1,6 +1,6 @@
 ## ts-node-closure-boilerplate
 
-This is a simple boilerplate to start direct coding in typescript and run it with node.js
+This is a simple boilerplate to start direct coding in typescript and run it with node.js. It's prepared for testing with jest and BDD with cucumber.
 
 After first checkout or clonse please run `yarn`to install all required dependencies
 
@@ -26,9 +26,14 @@ Creates a production bundle with typescript compiler and google closure compiler
 ### test
 
 `yarn run test`
-Starts all unit tests located in **tests**
+Starts all unit tests located in /**tests**
 
 ### test:integration
 
 `yarn run test:integration`
-Starts all integration tests located in **integration**
+Starts all integration tests located in /**integration**
+
+### test:bdd
+
+`yarn run test:bdd`
+Starts all bdd tests located in /**bdd**
