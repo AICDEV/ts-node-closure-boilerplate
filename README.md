@@ -13,6 +13,11 @@ The following scripts are available
 `yarn run start:dev`
 Starts the index.ts with ts-node
 
+### start:dev:watch
+
+`yarn run start:dev:watch`
+Starts the observer with nodemon and call start:dev if source change
+
 ### start
 
 `yarn run start`
